@@ -1,5 +1,5 @@
 # Loginius
-Loginius Android Application  (Education)
+Loginius Android Application  (Education)\n
 1)Add Student
 2)Add Course
 3)Add Attendance
