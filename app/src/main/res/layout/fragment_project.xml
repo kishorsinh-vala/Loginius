@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectFragment">
+
+    <RelativeLayout
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:id="@+id/my_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            app:lazyloader_animDur="800"
+            app:lazyloader_dotsDist="10dp"
+            app:lazyloader_dotsRadius="16dp"
+            app:lazyloader_firstDelayDur="150"
+            app:lazyloader_firstDotColor="@color/colorPrimary"
+            app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+            app:lazyloader_secondDelayDur="300"
+            app:lazyloader_secondDotColor="@color/colorPrimaryDark"
+            app:lazyloader_thirdDotColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_cns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false" />
+
+            <ImageButton
+                android:id="@+id/img_btn_prj"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/border2"
+                android:clickable="true"
+                android:onClick="Projectpdf"
+                android:src="@drawable/ic_download_foreground"
+                tools:ignore="OnClick" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

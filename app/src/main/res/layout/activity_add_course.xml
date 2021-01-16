@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCourseActivity">
+    <RelativeLayout
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+        <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:id="@+id/my_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            app:lazyloader_animDur="800"
+            app:lazyloader_dotsDist="10dp"
+            app:lazyloader_dotsRadius="16dp"
+            app:lazyloader_firstDelayDur="150"
+            app:lazyloader_firstDotColor="@color/colorPrimary"
+            app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+            app:lazyloader_secondDelayDur="300"
+            app:lazyloader_secondDotColor="@color/colorPrimaryDark"
+            app:lazyloader_thirdDotColor="@color/colorAccent" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_cns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/topView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/id_person"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/course_nm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Enter Course Name"
+            android:inputType="text"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <EditText
+            android:id="@+id/course_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Duration Time"
+            android:inputType="number"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_nm" />
+
+        <EditText
+            android:id="@+id/course_fee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Fees"
+            android:inputType="number"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_time"
+            android:drawableLeft="@drawable/ic_lock" />
+
+        <Button
+            android:id="@+id/course_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/round_bg"
+            android:text="ADD COURSE"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_fee" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

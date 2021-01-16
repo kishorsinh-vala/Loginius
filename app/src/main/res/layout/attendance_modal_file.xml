@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/unm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="NAME"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@id/rd_grp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup
+            android:id="@+id/rd_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/unm"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/attd_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:text="P"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/attd_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/attd_l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="L"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

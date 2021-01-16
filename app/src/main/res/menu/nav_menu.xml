@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Add Attendance"
+        app:showAsAction="never"
+        android:onClick="addAtd"/>
+    <item
+        android:title="Add Course"
+        app:showAsAction="never"
+        android:onClick="addCourse"/>
+    <item
+        android:title="Add Project"
+        app:showAsAction="never"
+        android:onClick="addProject"/>
+    <item
+        android:title="View Report"
+        app:showAsAction="never"
+        android:onClick="viewReport"/>
+    <item
+        android:iconTint="@color/colorPrimary"
+        android:title="Add Student"
+        android:onClick="addStudent"/>
+    <item
+        android:iconTint="@color/colorPrimary"
+        android:title="Reset Password"
+        android:onClick="resetPassword"/>
+    <item
+        android:iconTint="@color/colorPrimary"
+        android:title="Log Out"
+        android:onClick="Logout"/>
+
+</menu>
