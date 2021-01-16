@@ -7,6 +7,6 @@ Loginius Android Application  (Education)
   [4.1] Project Report (Display And Also Download)
   [4.2] Attendance Report (Date wise) (Display And Also Download)
  
- BIO METRIC LOGIN
+ # BIO METRIC LOGIN
  
  **NOTE :- For Bio Metric Login You Must Login atleast One time
