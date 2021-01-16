@@ -9,4 +9,4 @@ Attendance Report (Date wise) (Display And Also Download)<br/>
  
  <b>BIO METRIC LOGIN</b><br>
  
- # **NOTE :- For Bio Metric Login You Must Login atleast One time
+ # **NOTE :- For Bio Metric Login You Must Login Atleast One Time
